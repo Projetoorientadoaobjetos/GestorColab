@@ -45,8 +45,7 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            Esqueceu sua senha?</a
-          >
+            Esqueceu sua senha?</a>
         </div>
 
         <v-btn class="mb-8" color="blue" size="large" variant="tonal" block>
@@ -65,7 +64,7 @@
     </v-container>
   </v-app>
 </template>
-<script setup>
+<script setup lang="ts" name="LoginUser">
 import { ref } from "vue";
 
 const visible = ref(false);

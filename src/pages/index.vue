@@ -1,5 +1,6 @@
 <template>
-  <HelloWorld />
+  <login-user />
+  <register-user />
 </template>
 
 <script lang="ts" setup>

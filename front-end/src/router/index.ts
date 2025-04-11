@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router/auto";
+import { createRouter, createWebHistory } from "vue-router";
 
 import Login from "@/views/Login.vue";
 import RegistersUsers from "@/views/RegistersUsers.vue";
@@ -6,7 +6,7 @@ import RegistersUsers from "@/views/RegistersUsers.vue";
 
 const manualRouters = [
   {
-    path: "/",
+    path: "/login",
     component: Login,
   },
   {
