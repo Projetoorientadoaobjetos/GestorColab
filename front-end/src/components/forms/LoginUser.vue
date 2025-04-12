@@ -17,7 +17,9 @@
         style="width: 100%"
         color="white"
       >
-        <div class="text-subtitle-1 text-medium-emphasis">E-mail</div>
+        <div class="text-subtitle-1 text-medium-emphasis">
+          E-mail
+        </div>
 
         <v-text-field
           v-model="email"
@@ -28,7 +30,9 @@
           variant="outlined"
         />
 
-        <div class="text-subtitle-1 text-medium-emphasis">Senha</div>
+        <div class="text-subtitle-1 text-medium-emphasis">
+          Senha
+        </div>
 
         <v-text-field
           v-model="password"

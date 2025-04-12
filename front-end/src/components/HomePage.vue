@@ -45,7 +45,10 @@
             >
               Aprenda Tecnologia no Seu Ritmo | Helping to Growth
             </h1>
-            <p class="text-subtitle-1" style="color: #0d47a1">
+            <p 
+              class="text-subtitle-1" 
+              style="color: #0d47a1"
+            >
               Cursos intuitivos para iniciantes e entusiastas da tecnologia, com
               suporte personalizado e comunidade ativa.
             </p>
@@ -53,19 +56,28 @@
         </v-row>
       </v-container>
 
-      <v-container fluid class="py-10">
+      <v-container 
+        fluid 
+        class="py-10"
+      >
         <v-row>
-          <v-col cols="12" md="2" class="d-flex flex-column align-center">
+          <v-col 
+            cols="12" 
+            md="2" 
+            class="d-flex flex-column align-center"
+          >
             <v-card
               elevation="2"
               color="#ffffff"
               class="pa-4 mb-4"
               rounded="lg"
             >
-              <v-icon color="primary">mdi-lightbulb-on</v-icon>
+              <v-icon color="primary">
+                mdi-lightbulb-on
+              </v-icon>
               <p class="text-subtitle-2 mt-2 text-center">
                 Público Alvo:
-                <br />
+                <br>
                 Iniciantes em tecnologia, idosos em busca de inclusão digital, e
                 profissionais que querem expandir seus conhecimentos
                 tecnológicos.
@@ -73,7 +85,10 @@
             </v-card>
           </v-col>
 
-          <v-col cols="12" md="8">
+          <v-col 
+            cols="12" 
+            md="8"
+          >
             <v-card
               elevation="3"
               class="pa-6 mb-6"
@@ -108,8 +123,14 @@
                 <li class="mb-2">
                   ✅ Suporte personalizado com tutores e mentores
                 </li>
-                <li class="mb-2">✅ Comunidade colaborativa e ativa</li>
-                <li class="mb-2">✅ Conteúdo exclusivo para membros VIP</li>
+                <li class="mb-2">
+                  ✅ Comunidade colaborativa e 
+                  ativa
+                </li>
+                <li class="mb-2">
+                  ✅ Conteúdo exclusivo para membros 
+                  VIP
+                </li>
                 <li class="mb-2">
                   ✅ Abordagem prática com tutoriais passo a passo
                 </li>
@@ -138,14 +159,20 @@
           </v-col>
 
           <!-- Coluna direita -->
-          <v-col cols="12" md="2" class="d-flex flex-column align-center">
+          <v-col 
+            cols="12" 
+            md="2" 
+            class="d-flex flex-column align-center"
+          >
             <v-card
               elevation="2"
               color="#ffffff"
               class="pa-4 mb-4"
               rounded="lg"
             >
-              <v-icon color="deep-purple">mdi-account-group</v-icon>
+              <v-icon color="deep-purple">
+                mdi-account-group
+              </v-icon>
               <p class="text-subtitle-2 mt-2 text-center">
                 Mais de 2.000 alunos impactados
               </p>
@@ -170,42 +197,54 @@
               </h2>
 
               <!-- Depoimento 1 -->
-              <v-card elevation="2" color="#f3f7fa" class="pa-4 mb-4">
+              <v-card 
+                elevation="2" 
+                color="#f3f7fa" 
+                class="pa-4 mb-4"
+              >
                 <p style="font-size: 16px; color: #333">
                   "Depois de anos me sentindo intimidada por computadores,
                   finalmente encontrei um lugar onde posso aprender no meu
                   próprio ritmo.
-                  <br />
+                  <br>
                   Os tutores são pacientes e os conteúdos são explicados de
                   forma clara."
-                  <br />
+                  <br>
                   - <strong>Maria Silva, 67 anos</strong>
                 </p>
               </v-card>
 
               <!-- Depoimento 2 -->
-              <v-card elevation="2" color="#f3f7fa" class="pa-4 mb-4">
+              <v-card 
+                elevation="2" 
+                color="#f3f7fa" 
+                class="pa-4 mb-4"
+              >
                 <p style="font-size: 16px; color: #333">
                   "Como profissional de recursos humanos, estava tendo
                   dificuldades para acompanhar as novas tecnologias do meu
                   setor.
-                  <br />
+                  <br>
                   Os cursos da Helping to Growth me ajudaram a me atualizar e
                   ganhar mais confiança no trabalho."
-                  <br />
+                  <br>
                   - <strong>Carlos Mendes, 45 anos</strong>
                 </p>
               </v-card>
 
               <!-- Depoimento 3 -->
-              <v-card elevation="2" color="#f3f7fa" class="pa-4 mb-4">
+              <v-card 
+                elevation="2" 
+                color="#f3f7fa" 
+                class="pa-4 mb-4"
+              >
                 <p style="font-size: 16px; color: #333">
                   "Os webinars semanais são excelentes para tirar dúvidas e
                   conhecer outras pessoas que estão na mesma jornada de
                   aprendizado.
-                  <br />
+                  <br>
                   A comunidade faz toda a diferença!"
-                  <br />
+                  <br>
                   - <strong>Ana Paula Ferreira, 52 anos</strong>
                 </p>
               </v-card>
@@ -214,8 +253,14 @@
         </v-row>
 
         <!-- Novo Texto "Junte-se a nós" antes dos botões -->
-        <v-row align="center" justify="center">
-          <v-col cols="12" md="10">
+        <v-row 
+          align="center" 
+          justify="center"
+        >
+          <v-col 
+            cols="12" 
+            md="10"
+          >
             <v-card
               class="pa-6 mt-4"
               color="#f3f7fa"
@@ -240,7 +285,10 @@
 
         <!-- Novos Cards com os botões -->
         <v-row>
-          <v-col cols="12" md="4">
+          <v-col 
+            cols="12" 
+            md="4"
+          >
             <v-card
               elevation="3"
               class="pa-6 mb-6"
@@ -253,13 +301,20 @@
               >
                 Comece Seu Aprendizado
               </h2>
-              <v-btn color="primary" class="ma-2" size="large"
-                >Comece Agora</v-btn
+              <v-btn 
+                color="primary" 
+                class="ma-2" 
+                size="large"
               >
+                Comece Agora
+              </v-btn>
             </v-card>
           </v-col>
 
-          <v-col cols="12" md="4">
+          <v-col 
+            cols="12" 
+            md="4"
+          >
             <v-card
               elevation="3"
               class="pa-6 mb-6"
@@ -277,12 +332,17 @@
                 class="ma-2"
                 size="large"
                 variant="outlined"
-                >Veja Planos</v-btn
               >
+                Veja 
+                Planos
+              </v-btn>
             </v-card>
           </v-col>
 
-          <v-col cols="12" md="4">
+          <v-col 
+            cols="12" 
+            md="4"
+          >
             <v-card
               elevation="3"
               class="pa-6 mb-6"
@@ -295,9 +355,13 @@
               >
                 Participe de Nosso Próximo Webinar
               </h2>
-              <v-btn color="deep-purple accent-4" class="ma-2" size="large"
-                >Participe Agora</v-btn
+              <v-btn 
+                color="deep-purple accent-4" 
+                class="ma-2" 
+                size="large"
               >
+                Participe Agora
+              </v-btn>
             </v-card>
           </v-col>
         </v-row>
@@ -309,9 +373,16 @@
       app
       style="position: relative; background-color: #1976d2; padding: 10px 0"
     >
-      <v-row class="ma-0" align="center" justify="center">
+      <v-row 
+        class="ma-0" 
+        align="center" 
+        justify="center"
+      >
         <v-col class="text-center">
-          <p class="text-body-2" style="color: white; font-size: 14px">
+          <p 
+            class="text-body-2" 
+            style="color: white; font-size: 14px"
+          >
             HelpingToGrowth ©2025 - Todos os direitos reservados
           </p>
         </v-col>

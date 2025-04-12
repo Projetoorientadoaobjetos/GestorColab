@@ -17,7 +17,9 @@
         style="width: 100%"
         color="white"
       >
-        <div class="text-subtitle-1 text-medium-emphasis">E-mail</div>
+        <div class="text-subtitle-1 text-medium-emphasis">
+          E-mail
+        </div>
 
         <v-text-field
           v-model="email"
@@ -28,7 +30,22 @@
           variant="outlined"
         />
 
-        <div class="text-subtitle-1 text-medium-emphasis">Senha</div>
+        <div class="text-subtitle-1 text-medium-emphasis">
+          Confirmação E-mail
+        </div>
+
+        <v-text-field
+          v-model="confirmaEmail"
+          :rules="emailconfirmRules"
+          density="compact"
+          placeholder="Confirme seu e-mail"
+          prepend-inner-icon="mdi-email-outline"
+          variant="outlined"
+        />
+
+        <div class="text-subtitle-1 text-medium-emphasis">
+          Senha
+        </div>
 
         <v-text-field
           v-model="password"
@@ -37,6 +54,22 @@
           :type="visible ? 'text' : 'password'"
           density="compact"
           placeholder="Informe sua senha"
+          prepend-inner-icon="mdi-lock-outline"
+          variant="outlined"
+          @click:append-inner="visible = !visible"
+        />
+
+        <div class="text-subtitle-1 text-medium-emphasis">
+          Confirmação Senha
+        </div>
+
+        <v-text-field
+          v-model="confirmPassword"
+          :rules="passwordconfirmRules"
+          :append-inner-icon="visible ? 'mdi-eye-off' : 'mdi-eye'"
+          :type="visible ? 'text' : 'password'"
+          density="compact"
+          placeholder="Confirme sua senha"
           prepend-inner-icon="mdi-lock-outline"
           variant="outlined"
           @click:append-inner="visible = !visible"
@@ -63,7 +96,10 @@
         </v-btn>
 
         <v-card-text class="text-center">
-          <router-link to="/login" class="text-blue text-decoration-none">
+          <router-link 
+            to="/login" 
+            class="text-blue text-decoration-none"
+          >
             Já possui conta? Faça login
             <v-icon icon="mdi-chevron-right" />
           </router-link>
@@ -81,18 +117,36 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const visible = ref(false);
 const email = ref("");
+const confirmaEmail = ref("");
 const password = ref("");
+const confirmPassword = ref("");
 
 // Regras de validação para o e-mail
 const emailRules = [
   (v: string) => !!v || "E-mail é obrigatório",
   (v: string) => /.+@.+\..+/.test(v) || "E-mail deve ser válido",
+  (v: string) => v.length <= 50 || "O e-mail deve ter no máximo 50 caracteres",
+];
+
+const emailconfirmRules = [
+  (v: string) => !!v || "E-mail é obrigatório",
+  (v: string) => /.+@.+\..+/.test(v) || "E-mail deve ser válido",
+  (v: string) => v === email.value || "Os e-mails não coincidem",
+  (v: string) => v.length <= 50 || "O e-mail deve ter no máximo 50 caracteres",
 ];
 
 // Regras de validação para a senha
 const passwordRules = [
   (v: string) => !!v || "Senha é obrigatória",
   (v: string) => v.length >= 6 || "A senha deve ter no mínimo 6 caracteres",
+  (v: string) => v.length <= 40 || "O e-mail deve ter no máximo 40 caracteres",
+];
+
+const passwordconfirmRules = [
+  (v: string) => !!v || "Senha é obrigatória",
+  (v: string) => v.length >= 6 || "A senha deve ter no mínimo 6 caracteres",
+  (v: string) => v === password.value || "A senha não coincide",
+  (v: string) => v.length <= 40 || "O e-mail deve ter no máximo 40 caracteres",
 ];
 
 // Função para validar o formulário e redirecionar para a home
@@ -100,7 +154,7 @@ const validateForm = () => {
   if (email.value && password.value) {
     console.log("Formulário validado");
     // Redirecionar para a página inicial após o registro bem-sucedido
-    router.push("/home-page");
+    router.push("/");
   } else {
     console.log("Formulário inválido");
   }

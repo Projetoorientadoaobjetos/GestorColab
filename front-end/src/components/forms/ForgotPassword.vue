@@ -17,7 +17,11 @@
         style="width: 100%"
         color="white"
       >
-        <div class="text-subtitle-1 text-medium-emphasis">E-mail</div>
+        <div 
+          class="text-subtitle-1 text-medium-emphasis"
+        >
+          E-mail
+        </div>
 
         <v-text-field
           v-model="email"
@@ -62,7 +66,7 @@ const handleResetPassword = () => {
     console.log("Redefinindo senha para e-mail:", email.value);
     // Aqui, simula-se um processo de redefinição de senha
     // Após o sucesso, redireciona para a tela de login
-    router.push("/login");
+    router.push("/");
   } else {
     console.log("E-mail não fornecido");
   }

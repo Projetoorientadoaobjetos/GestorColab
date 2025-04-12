@@ -5,63 +5,156 @@
     </v-container>
 
     <!-- Footer detalhado que só aparece ao rolar até o final -->
-    <v-footer v-if="isAtBottom" app color="blue" dark class="footer">
+    <v-footer 
+      v-if="isAtBottom" 
+      app 
+      color="blue" 
+      dark 
+      class="footer"
+    >
       <v-container>
         <v-row>
           <!-- Sobre Nós -->
-          <v-col cols="12" sm="6" md="3">
-            <h4 class="text-h6 mb-2">Sobre Nós</h4>
-            <p class="text-body-2">Nossa missão e visão</p>
-            <p class="text-body-2">Equipe de especialistas</p>
-            <p class="text-body-2">História da empresa</p>
+          <v-col 
+            cols="12" 
+            sm="6" 
+            md="3"
+          >
+            <h4 class="text-h6 mb-2">
+              Sobre Nós
+            </h4>
+            <p class="text-body-2">
+              Nossa missão e visão
+            </p>
+            <p class="text-body-2">
+              Equipe de especialistas
+            </p>
+            <p class="text-body-2">
+              História da empresa
+            </p>
           </v-col>
 
           <!-- Cursos -->
-          <v-col cols="12" sm="6" md="3">
-            <h4 class="text-h6 mb-2">Cursos</h4>
-            <p class="text-body-2">Categorias por nível</p>
-            <p class="text-body-2">Temas: Segurança, Escritório...</p>
-            <p class="text-body-2">Detalhes de cada curso</p>
+          <v-col 
+            cols="12" 
+            sm="6" 
+            md="3"
+          >
+            <h4 class="text-h6 mb-2">
+              Cursos
+            </h4>
+            <p class="text-body-2">
+              Categorias por nível
+            </p>
+            <p class="text-body-2">
+              Temas: Segurança, Escritório...
+            </p>
+            <p class="text-body-2">
+              Detalhes de cada curso
+            </p>
           </v-col>
 
           <!-- Planos e Comunidade -->
-          <v-col cols="12" sm="6" md="3">
-            <h4 class="text-h6 mb-2">Planos & Comunidade</h4>
-            <p class="text-body-2">Gratuito, Básico, VIP</p>
-            <p class="text-body-2">Certificações incluídas</p>
-            <p class="text-body-2">Fóruns & Histórias de sucesso</p>
+          <v-col 
+            cols="12" 
+            sm="6" 
+            md="3"
+          >
+            <h4 class="text-h6 mb-2">
+              Planos & Comunidade
+            </h4>
+            <p class="text-body-2">
+              Gratuito, Básico, VIP
+            </p>
+            <p class="text-body-2">
+              Certificações incluídas
+            </p>
+            <p class="text-body-2">
+              Fóruns & Histórias de sucesso
+            </p>
           </v-col>
 
           <!-- Blog e Suporte -->
-          <v-col cols="12" sm="6" md="3">
-            <h4 class="text-h6 mb-2">Blog & Suporte</h4>
-            <p class="text-body-2">Artigos educativos</p>
-            <p class="text-body-2">Tutoriais rápidos</p>
-            <p class="text-body-2">FAQ e contato</p>
+          <v-col 
+            cols="12" 
+            sm="6" 
+            md="3"
+          >
+            <h4 class="text-h6 mb-2">
+              Blog & Suporte
+            </h4>
+            <p class="text-body-2">
+              Artigos educativos
+            </p>
+            <p class="text-body-2">
+              Tutoriais rápidos
+            </p>
+            <p class="text-body-2">
+              FAQ e contato
+            </p>
           </v-col>
         </v-row>
 
         <v-divider class="my-6" />
 
-        <v-row justify="space-between" align="center">
+        <v-row 
+          justify="space-between" 
+          align="center"
+        >
           <!-- Copyright -->
-          <v-col cols="12" sm="6" class="text-body-2 copyright">
+          <v-col 
+            cols="12" 
+            sm="6" 
+            class="text-body-2 copyright"
+          >
             HelpingToGrowth ©2025 - Todos os direitos reservados
           </v-col>
 
           <!-- Redes sociais -->
-          <v-col cols="12" sm="6" class="d-flex justify-end social-icons">
-            <v-btn icon href="#" target="_blank" class="mx-1">
-              <v-icon color="white">mdi-facebook</v-icon>
+          <v-col 
+            cols="12" 
+            sm="6" 
+            class="d-flex justify-end social-icons"
+          >
+            <v-btn 
+              icon 
+              href="#" 
+              target="_blank" 
+              class="mx-1"
+            >
+              <v-icon color="white">
+                mdi-facebook
+              </v-icon>
             </v-btn>
-            <v-btn icon href="#" target="_blank" class="mx-1">
-              <v-icon color="white">mdi-twitter</v-icon>
+            <v-btn 
+              icon 
+              href="#" 
+              target="_blank" 
+              class="mx-1"
+            >
+              <v-icon color="white">
+                mdi-twitter
+              </v-icon>
             </v-btn>
-            <v-btn icon href="#" target="_blank" class="mx-1">
-              <v-icon color="white">mdi-linkedin</v-icon>
+            <v-btn 
+              icon 
+              href="#" 
+              target="_blank" 
+              class="mx-1"
+            >
+              <v-icon color="white">
+                mdi-linkedin
+              </v-icon>
             </v-btn>
-            <v-btn icon href="#" target="_blank" class="mx-1">
-              <v-icon color="white">mdi-instagram</v-icon>
+            <v-btn 
+              icon 
+              href="#" 
+              target="_blank" 
+              class="mx-1"
+            >
+              <v-icon color="white">
+                mdi-instagram
+              </v-icon>
             </v-btn>
           </v-col>
         </v-row>

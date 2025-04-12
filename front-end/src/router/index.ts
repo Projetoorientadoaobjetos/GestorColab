@@ -7,7 +7,7 @@ import ForgotPasswords from "@/views/ForgotPasswords.vue";
 
 const manualRouters = [
   {
-    path: "/login",
+    path: "/",
     name: "login",
     component: Login,
   },

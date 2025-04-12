@@ -1,5 +1,5 @@
 <template>
-    <LoginUser/>
+  <LoginUser />
 </template>
 
 <script lang="ts" setup></script>
