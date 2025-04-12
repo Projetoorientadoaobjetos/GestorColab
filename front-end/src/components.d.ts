@@ -8,6 +8,7 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Footer: typeof import('./components/forms/Footer.vue')['default']
+    ForgotPassword: typeof import('./components/forms/ForgotPassword.vue')['default']
     Header: typeof import('./components/forms/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Home: typeof import('./components/HomePage.vue')['default']
@@ -16,5 +17,6 @@ declare module 'vue' {
     RegisterUser: typeof import('./components/forms/RegisterUser.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SenhaEsquecida: typeof import('./components/forms/SenhaEsquecida.vue')['default']
   }
 }

@@ -13,6 +13,10 @@ import { useRoute } from "vue-router";
 const route = useRoute();
 
 const hideHeaderFooter = computed(() => {
-  return route.name === "login" || route.name === "registerUser";
+  return (
+    route.name === "login" ||
+    route.name === "registerUser" ||
+    route.name === "EsqueceuSuaSenha"
+  );
 });
 </script>
