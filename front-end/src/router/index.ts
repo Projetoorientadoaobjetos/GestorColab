@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Login from "@/views/Login.vue";
 import RegistersUsers from "@/views/RegistersUsers.vue";
 import Home from "@/views/Home.vue";
+import ForgotPasswords from "@/views/ForgotPasswords.vue";
 
 const manualRouters = [
   {
@@ -19,6 +20,11 @@ const manualRouters = [
     path: "/home-page",
     name: "homePage",
     component: Home,
+  },
+  {
+    path: "/forgot-password",
+    name: "EsqueceuSuaSenha",
+    component: ForgotPasswords,
   },
 ];
 const routes = [...manualRouters];

@@ -7,7 +7,7 @@
     <v-container
       fluid
       class="pa-0 d-flex align-center justify-center"
-      style="min-height: 100vh"
+      style="min-height: 100vh; background-color: lightblue"
     >
       <v-card
         class="mx-auto pa-12 pb-8"
@@ -17,27 +17,22 @@
         style="width: 100%"
         color="white"
       >
-        <!-- E-mail -->
-        <div class="text-subtitle-1 text-medium-emphasis">
-          E-mail
-        </div>
+        <div class="text-subtitle-1 text-medium-emphasis">E-mail</div>
 
         <v-text-field
           v-model="email"
+          :rules="emailRules"
           density="compact"
           placeholder="Digite seu e-mail"
           prepend-inner-icon="mdi-email-outline"
           variant="outlined"
-          type="email"
         />
 
-        <!-- Senha -->
-        <div class="text-subtitle-1 text-medium-emphasis">
-          Senha
-        </div>
+        <div class="text-subtitle-1 text-medium-emphasis">Senha</div>
 
         <v-text-field
           v-model="password"
+          :rules="passwordRules"
           :append-inner-icon="visible ? 'mdi-eye-off' : 'mdi-eye'"
           :type="visible ? 'text' : 'password'"
           density="compact"
@@ -47,37 +42,29 @@
           @click:append-inner="visible = !visible"
         />
 
-        <!-- Esqueci minha senha -->
         <div class="d-flex justify-end pt-2 pb-6">
-          <a
+          <router-link
+            to="/forgot-password"
             class="text-caption text-decoration-none text-blue"
-            href="#"
-            rel="noopener noreferrer"
-            target="_blank"
           >
             Esqueceu sua senha?
-          </a>
+          </router-link>
         </div>
 
-        <!-- Botão de Registrar -->
         <v-btn
           class="mb-8"
           color="blue"
           size="large"
           variant="tonal"
           block
-          @click="handleRegister"
+          @click="validateForm"
         >
           Registrar
         </v-btn>
 
-        <!-- Link para o Login -->
         <v-card-text class="text-center">
-          <router-link
-            to="/login"
-            class="text-blue text-decoration-none"
-          >
-            Já possui conta? Faça login 
+          <router-link to="/login" class="text-blue text-decoration-none">
+            Já possui conta? Faça login
             <v-icon icon="mdi-chevron-right" />
           </router-link>
         </v-card-text>
@@ -88,25 +75,36 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 
 // Variáveis de controle
-const email = ref('');
-const password = ref('');
+const router = useRouter();
 const visible = ref(false);
+const email = ref("");
+const password = ref("");
 
-// Função de registro (simples exemplo)
-const handleRegister = () => {
-  if (!email.value || !password.value) {
-    alert("Por favor, preencha todos os campos!");
-    return;
+// Regras de validação para o e-mail
+const emailRules = [
+  (v: string) => !!v || "E-mail é obrigatório",
+  (v: string) => /.+@.+\..+/.test(v) || "E-mail deve ser válido",
+];
+
+// Regras de validação para a senha
+const passwordRules = [
+  (v: string) => !!v || "Senha é obrigatória",
+  (v: string) => v.length >= 6 || "A senha deve ter no mínimo 6 caracteres",
+];
+
+// Função para validar o formulário e redirecionar para a home
+const validateForm = () => {
+  if (email.value && password.value) {
+    console.log("Formulário validado");
+    // Redirecionar para a página inicial após o registro bem-sucedido
+    router.push("/home-page");
+  } else {
+    console.log("Formulário inválido");
   }
-  // Lógica para registro (futuramente você pode conectar com a API)
-  console.log("Registrando usuário com e-mail:", email.value);
-  // Navegar para o login após o registro (opcional)
-  // router.push('/login');
 };
 </script>
 
-<style scoped>
-/* Ajustes adicionais de estilo, caso necessário */
-</style>
+<style scoped></style>
