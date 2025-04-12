@@ -1,22 +1,18 @@
 <template>
   <v-app>
-    <!-- Header: Coloquei o Header aqui -->
-    <Header />
-
-    <!-- Conteúdo da rota atual -->
+    <Header v-if="!hideHeaderFooter" />
     <router-view />
-
-    <!-- Footer: Coloquei o Footer aqui -->
-    <Footer />
+    <Footer v-if="!hideHeaderFooter" />
   </v-app>
 </template>
 
 <script lang="ts" setup>
-// Importando os componentes Header e Footer
-import Header from '@views/Header.vue'
-import Footer from '@views/Footer.vue'
-</script>
+import { computed } from "vue";
+import { useRoute } from "vue-router";
 
-<style scoped>
-/* Estilos globais ou específicos do seu app */
-</style>
+const route = useRoute();
+
+const hideHeaderFooter = computed(() => {
+  return route.name === "login" || route.name === "registerUser";
+});
+</script>
