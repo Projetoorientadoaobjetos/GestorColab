@@ -1,5 +1,9 @@
 <template>
-  <v-app class="d-flex align-center justify-center" style="min-height: 100vh">
+  <v-app
+    fluid
+    class="d-flex align-center justify-center"
+    style="min-height: 100vh"
+  >
     <v-container
       fluid
       class="pa-0 d-flex align-center justify-center"
@@ -13,22 +17,26 @@
         style="width: 100%"
         color="white"
       >
-        <div class="text-subtitle-1 text-medium-emphasis">E-mail</div>
+        <div class="text-subtitle-1 text-medium-emphasis">
+          E-mail
+        </div>
 
         <v-text-field
+          v-model="email"
+          :rules="emailRules"
           density="compact"
           placeholder="E-mail"
           prepend-inner-icon="mdi-email-outline"
           variant="outlined"
-        ></v-text-field>
+        />
 
-        <div
-          class="text-subtitle-1 text-medium-emphasis d-flex align-center justify-space-between; align"
-        >
+        <div class="text-subtitle-1 text-medium-emphasis">
           Senha
         </div>
 
         <v-text-field
+          v-model="password"
+          :rules="passwordRules"
           :append-inner-icon="visible ? 'mdi-eye-off' : 'mdi-eye'"
           :type="visible ? 'text' : 'password'"
           density="compact"
@@ -36,7 +44,7 @@
           prepend-inner-icon="mdi-lock-outline"
           variant="outlined"
           @click:append-inner="visible = !visible"
-        ></v-text-field>
+        />
 
         <div class="d-flex justify-end pt-2 pb-6">
           <a
@@ -45,11 +53,18 @@
             rel="noopener noreferrer"
             target="_blank"
           >
-            Esqueceu sua senha?</a
-          >
+            Esqueceu sua senha?
+          </a>
         </div>
 
-        <v-btn class="mb-8" color="blue" size="large" variant="tonal" block>
+        <v-btn 
+          class="mb-8" 
+          color="blue" 
+          size="large" 
+          variant="tonal" 
+          block
+          @click="validateForm"
+        >
           Log In
         </v-btn>
 
@@ -58,15 +73,41 @@
             to="/register-user"
             class="text-blue text-decoration-none"
           >
-            Registre-se <v-icon icon="mdi-chevron-right"></v-icon>
+            Registre-se <v-icon icon="mdi-chevron-right" />
           </router-link>
         </v-card-text>
       </v-card>
     </v-container>
   </v-app>
 </template>
-<script setup>
+
+<script setup lang="ts" name="LoginUser">
 import { ref } from "vue";
 
 const visible = ref(false);
+const email = ref("");
+const password = ref("");
+
+
+const emailRules = [
+  (v: string) => !!v || "E-mail é obrigatório",
+  (v: string) => /.+@.+\..+/.test(v) || "E-mail deve ser válido",
+];
+
+const passwordRules = [
+  (v: string) => !!v || "Senha é obrigatória",
+  (v: string) => v.length >= 6 || "A senha deve ter no mínimo 6 caracteres",
+];
+
+const validateForm = () => {
+  if (email.value && password.value) {
+    console.log("Formulário validado");
+  } else {
+    console.log("Formulário inválido");
+  }
+};
 </script>
+
+<style scoped>
+
+</style>
