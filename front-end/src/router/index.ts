@@ -4,22 +4,27 @@ import Login from "@/views/Login.vue";
 import RegistersUsers from "@/views/RegistersUsers.vue";
 import Home from "@/views/Home.vue";
 
-
-
 const manualRouters = [
   {
     path: "/login",
+    name: "login",
     component: Login,
   },
   {
     path: "/register-user",
+    name: "registerUser",
     component: RegistersUsers,
+  },
+  {
+    path: "/home-page",
+    name: "homePage",
+    component: Home,
   },
 ];
 const routes = [...manualRouters];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env?.BASE_URL || "/"),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 
