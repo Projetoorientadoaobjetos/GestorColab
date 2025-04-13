@@ -727,7 +727,7 @@
     >
     ></v-app
   >
-  <v-card elevation="3" class="pa-12 mb-6" color="#ffffff" rounded="lg">
+  <v-card elevation="3" class="pa-6" color="#ffffff" rounded="lg">
     <h2 class="text-h5 font-weight-medium mb-4" style="color: #1976d2">
       Próximos Eventos
     </h2>
@@ -757,7 +757,7 @@
       </v-col>
     </v-row>
   </v-card>
-  <v-card elevation="3" class="pa-6 mb-6" color="#ffffff" rounded="lg">
+  <v-card elevation="3" class="pa-6" color="#ffffff" rounded="lg">
     <h2 class="text-h5 font-weight-medium mb-4" style="color: #1976d2">
       Cursos em Destaque
     </h2>
@@ -876,7 +876,7 @@
       </v-col>
     </v-row>
   </v-card>
-  <v-card elevation="3" class="pa-6 mb-6" color="#ffffff" rounded="lg">
+  <v-card elevation="3" class="pa-6" color="#ffffff" rounded="lg">
     <h2 class="text-h5 font-weight-medium mb-4" style="color: #1976d2">
       Entre em Contato
     </h2>
