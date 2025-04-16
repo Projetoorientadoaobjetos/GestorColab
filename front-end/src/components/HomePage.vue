@@ -1,4 +1,5 @@
 <template>
+  <!-- Container principal do aplicativo -->
   <v-app
     style="
       background-color: #ffff;
@@ -7,6 +8,7 @@
       position: relative;
     "
   >
+    <!-- Imagem de fundo com opacidade reduzida -->
     <v-img
       src="https://cdn.pixabay.com/photo/2015/06/01/09/04/keyboard-793048_1280.jpg"
       cover
@@ -69,6 +71,7 @@
           </v-col>
         </v-row>
       </v-container>
+
       <!-- Seção Sobre Nós -->
       <v-row>
         <v-col cols="12">
@@ -86,8 +89,12 @@
               Sobre Nós
             </h2>
 
+            <!-- Cards de História e Missão -->
             <v-row>
-              <v-col cols="12" md="6">
+              <v-col 
+                cols="12" 
+                md="6"
+              >
                 <v-card
                   class="pa-4 mb-4"
                   color="#ffffff"
@@ -100,7 +107,10 @@
                   >
                     Nossa História
                   </h3>
-                  <p class="mb-4 text-left" style="line-height: 1.8">
+                  <p 
+                    class="mb-4 text-left" 
+                    style="line-height: 1.8"
+                  >
                     A Helping to Growth nasceu em 2023 a partir de uma
                     observação simples: muitas pessoas estavam sendo deixadas
                     para trás na revolução digital. Fundada por um grupo de
@@ -109,7 +119,10 @@
                     acessível a todos, independentemente da idade ou experiência
                     prévia.
                   </p>
-                  <p class="text-left" style="line-height: 1.8">
+                  <p 
+                    class="text-left" 
+                    style="line-height: 1.8"
+                  >
                     Tudo começou com pequenos workshops gratuitos em centros
                     comunitários, onde percebemos o impacto transformador que o
                     aprendizado tecnológico tinha na vida das pessoas. O brilho
@@ -121,7 +134,10 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" md="6">
+              <v-col 
+                cols="12" 
+                md="6"
+              >
                 <v-card
                   class="pa-4 mb-4"
                   color="#ffffff"
@@ -134,12 +150,18 @@
                   >
                     Nossa Missão
                   </h3>
-                  <p class="mb-3 text-left" style="line-height: 1.8">
+                  <p 
+                    class="mb-3 text-left" 
+                    style="line-height: 1.8"
+                  >
                     Acreditamos que a tecnologia deve unir, não dividir. Nossa
                     missão é democratizar o acesso ao conhecimento digital,
                     criando pontes em vez de barreiras.
                   </p>
-                  <p class="text-left" style="line-height: 1.8">
+                  <p 
+                    class="text-left" 
+                    style="line-height: 1.8"
+                  >
                     Trabalhamos para:
                   </p>
                   <ul
@@ -167,32 +189,52 @@
               </v-col>
             </v-row>
 
+            <!-- Seção Nossa Equipe -->
             <h3
               class="text-h6 font-weight-bold mt-6 mb-4"
               style="color: #0ea5e9"
             >
               Nossa Equipe
             </h3>
-            <p class="mb-4" style="line-height: 1.6">
+            <p 
+              class="mb-4" 
+              style="line-height: 1.6"
+            >
               Por trás da Helping to Growth está uma equipe diversificada de
               educadores, desenvolvedores, designers instrucionais e
               especialistas em acessibilidade, todos unidos pelo compromisso com
               a inclusão digital.
             </p>
 
+            <!-- Cards de Membros da Equipe -->
             <v-row>
-              <v-col cols="12" sm="6" md="3">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="3"
+              >
                 <v-card
                   class="pa-4 mb-3"
                   outlined
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">M</span>
                   </v-avatar>
-                  <p class="font-weight-bold mb-1">Maria Oliveira</p>
-                  <p class="text-caption mb-2" style="color: #666">
+                  <p 
+                    class="font-weight-bold mb-1"
+                  >
+                    Maria Oliveira
+                  </p>
+                  <p 
+                    class="text-caption mb-2" 
+                    style="color: #666"
+                  >
                     Fundadora e Diretora Pedagógica
                   </p>
                   <p class="text-body-2">
@@ -203,18 +245,33 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="3">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="3"
+              >
                 <v-card
                   class="pa-4 mb-3"
                   outlined
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">C</span>
                   </v-avatar>
-                  <p class="font-weight-bold mb-1">Carlos Santos</p>
-                  <p class="text-caption mb-2" style="color: #666">
+                  <p 
+                    class="font-weight-bold mb-1"
+                  >
+                    Carlos Santos
+                  </p>
+                  <p 
+                    class="text-caption mb-2" 
+                    style="color: #666"
+                  >
                     Diretor de Tecnologia
                   </p>
                   <p class="text-body-2">
@@ -225,18 +282,33 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="3">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="3"
+              >
                 <v-card
                   class="pa-4 mb-3"
                   outlined
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">A</span>
                   </v-avatar>
-                  <p class="font-weight-bold mb-1">Ana Soares</p>
-                  <p class="text-caption mb-2" style="color: #666">
+                  <p 
+                    class="font-weight-bold mb-1"
+                  >
+                    Ana Soares
+                  </p>
+                  <p 
+                    class="text-caption mb-2" 
+                    style="color: #666"
+                  >
                     Coordenadora de Comunidade
                   </p>
                   <p class="text-body-2">
@@ -247,18 +319,33 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="3">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="3"
+              >
                 <v-card
                   class="pa-4 mb-3"
                   outlined
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">P</span>
                   </v-avatar>
-                  <p class="font-weight-bold mb-1">Pedro Lima</p>
-                  <p class="text-caption mb-2" style="color: #666">
+                  <p 
+                    class="font-weight-bold mb-1"
+                  >
+                    Pedro Lima
+                  </p>
+                  <p 
+                    class="text-caption mb-2" 
+                    style="color: #666"
+                  >
                     Especialista em Acessibilidade
                   </p>
                   <p class="text-body-2">
@@ -269,6 +356,7 @@
               </v-col>
             </v-row>
 
+            <!-- Seção Nossos Valores -->
             <h3
               class="text-h6 font-weight-bold mt-6 mb-3"
               style="color: #0ea5e9"
@@ -276,7 +364,11 @@
               Nossos Valores
             </h3>
             <v-row>
-              <v-col cols="12" sm="6" md="2.4">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="2.4"
+              >
                 <v-card
                   class="pa-4 text-center"
                   outlined
@@ -284,8 +376,17 @@
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-icon color="#0ea5e9" class="mb-2">mdi-heart</v-icon>
-                  <p class="font-weight-bold">Empatia</p>
+                  <v-icon 
+                    color="#0ea5e9" 
+                    class="mb-2"
+                  >
+                    mdi-heart
+                  </v-icon>
+                  <p 
+                    class="font-weight-bold"
+                  >
+                    Empatia
+                  </p>
                   <p class="text-body-2">
                     Compreendemos as dificuldades e receios de quem está
                     iniciando no mundo digital.
@@ -293,7 +394,11 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="2.4">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="2.4"
+              >
                 <v-card
                   class="pa-4 text-center"
                   outlined
@@ -301,8 +406,17 @@
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-icon color="#0ea5e9" class="mb-2">mdi-timer-sand</v-icon>
-                  <p class="font-weight-bold">Paciência</p>
+                  <v-icon 
+                    color="#0ea5e9" 
+                    class="mb-2"
+                  >
+                    mdi-timer-sand
+                  </v-icon>
+                  <p 
+                    class="font-weight-bold"
+                  >
+                    Paciência
+                  </p>
                   <p class="text-body-2">
                     Respeitamos o ritmo individual de aprendizado de cada
                     pessoa.
@@ -310,7 +424,11 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="2.4">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="2.4"
+              >
                 <v-card
                   class="pa-4 text-center"
                   outlined
@@ -318,15 +436,28 @@
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-icon color="#0ea5e9" class="mb-2">mdi-lightbulb-on</v-icon>
-                  <p class="font-weight-bold">Clareza</p>
+                  <v-icon 
+                    color="#0ea5e9" 
+                    class="mb-2"
+                  >
+                    mdi-lightbulb-on
+                  </v-icon>
+                  <p 
+                    class="font-weight-bold"
+                  >
+                    Clareza
+                  </p>
                   <p class="text-body-2">
                     Comunicamos conceitos complexos de forma simples e direta.
                   </p>
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="2.4">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="2.4"
+              >
                 <v-card
                   class="pa-4 text-center"
                   outlined
@@ -334,8 +465,17 @@
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-icon color="#0ea5e9" class="mb-2">mdi-certificate</v-icon>
-                  <p class="font-weight-bold">Qualidade</p>
+                  <v-icon 
+                    color="#0ea5e9" 
+                    class="mb-2"
+                  >
+                    mdi-certificate
+                  </v-icon>
+                  <p 
+                    class="font-weight-bold"
+                  >
+                    Qualidade
+                  </p>
                   <p class="text-body-2">
                     Desenvolvemos conteúdos de excelência com foco na aplicação
                     prática.
@@ -343,7 +483,11 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="2.4">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="2.4"
+              >
                 <v-card
                   class="pa-4 text-center"
                   outlined
@@ -351,10 +495,17 @@
                   color="#ffffff"
                   elevation="2"
                 >
-                  <v-icon color="#0ea5e9" class="mb-2"
-                    >mdi-account-group</v-icon
+                  <v-icon 
+                    color="#0ea5e9" 
+                    class="mb-2"
                   >
-                  <p class="font-weight-bold">Comunidade</p>
+                    mdi-account-group
+                  </v-icon>
+                  <p 
+                    class="font-weight-bold"
+                  >
+                    Comunidade
+                  </p>
                   <p class="text-body-2">
                     Acreditamos no poder da aprendizagem colaborativa e do
                     suporte mútuo.
@@ -365,10 +516,16 @@
           </v-card>
         </v-col>
       </v-row>
-      <!-- Nossos Cursos -->
+
+      <!-- Seção Nossos Cursos -->
       <v-row>
         <v-col cols="12">
-          <v-card elevation="3" class="pa-8 mb-6" color="#ffffff" rounded="lg">
+          <v-card 
+            elevation="3" 
+            class="pa-8 mb-6" 
+            color="#ffffff" 
+            rounded="lg"
+          >
             <h2
               class="text-h4 font-weight-bold mb-6 text-center"
               style="color: #1e40af"
@@ -383,8 +540,12 @@
               diferentes níveis de conhecimento e necessidades específicas:
             </p>
 
+            <!-- Cards de Cursos -->
             <v-row>
-              <v-col cols="12" md="4">
+              <v-col 
+                cols="12" 
+                md="4"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
@@ -413,7 +574,10 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" md="4">
+              <v-col 
+                cols="12" 
+                md="4"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
@@ -441,7 +605,10 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" md="4">
+              <v-col 
+                cols="12" 
+                md="4"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
@@ -470,7 +637,10 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" md="6">
+              <v-col 
+                cols="12" 
+                md="6"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
@@ -498,7 +668,10 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" md="6">
+              <v-col 
+                cols="12" 
+                md="6"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
@@ -531,7 +704,7 @@
         </v-col>
       </v-row>
 
-      <!-- Como Funciona -->
+      <!-- Seção Como Funciona -->
       <v-row>
         <v-col cols="12">
           <v-card
@@ -548,15 +721,25 @@
               Como Funciona
             </h2>
 
+            <!-- Cards de Processo -->
             <v-row justify="center">
-              <v-col cols="12" sm="6" md="4" lg="2">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="4" 
+                lg="2"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
                   height="100%"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">1</span>
                   </v-avatar>
                   <h3 class="text-subtitle-1 font-weight-bold mb-2">
@@ -568,14 +751,23 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="4" lg="2">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="4" 
+                lg="2"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
                   height="100%"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">2</span>
                   </v-avatar>
                   <h3 class="text-subtitle-1 font-weight-bold mb-2">
@@ -588,14 +780,23 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="4" lg="2">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="4" 
+                lg="2"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
                   height="100%"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">3</span>
                   </v-avatar>
                   <h3 class="text-subtitle-1 font-weight-bold mb-2">
@@ -608,14 +809,23 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="4" lg="2">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="4" 
+                lg="2"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
                   height="100%"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">4</span>
                   </v-avatar>
                   <h3 class="text-subtitle-1 font-weight-bold mb-2">
@@ -628,14 +838,23 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="4" lg="2">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="4" 
+                lg="2"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
                   height="100%"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">5</span>
                   </v-avatar>
                   <h3 class="text-subtitle-1 font-weight-bold mb-2">
@@ -648,14 +867,23 @@
                 </v-card>
               </v-col>
 
-              <v-col cols="12" sm="6" md="4" lg="2">
+              <v-col 
+                cols="12" 
+                sm="6" 
+                md="4" 
+                lg="2"
+              >
                 <v-card
                   class="pa-4 text-center mb-4"
                   color="#ffffff"
                   height="100%"
                   elevation="2"
                 >
-                  <v-avatar color="#0ea5e9" size="54" class="mb-4">
+                  <v-avatar 
+                    color="#0ea5e9" 
+                    size="54" 
+                    class="mb-4"
+                  >
                     <span class="text-h5 text-white font-weight-bold">6</span>
                   </v-avatar>
                   <h3 class="text-subtitle-1 font-weight-bold mb-2">
@@ -672,10 +900,15 @@
         </v-col>
       </v-row>
 
-      <!-- Depoimentos de Alunos -->
+      <!-- Seção Depoimentos -->
       <v-row>
         <v-col cols="12">
-          <v-card elevation="3" class="pa-8 mb-6" color="#ffffff" rounded="lg">
+          <v-card 
+            elevation="3" 
+            class="pa-8 mb-6" 
+            color="#ffffff" 
+            rounded="lg"
+          >
             <h2
               class="text-h4 font-weight-bold mb-6 text-center"
               style="color: #1e40af"
@@ -684,7 +917,10 @@
             </h2>
 
             <v-row>
-              <v-col cols="12" md="4">
+              <v-col 
+                cols="12" 
+                md="4"
+              >
                 <!-- Depoimento 1 -->
                 <v-card
                   elevation="2"
@@ -692,9 +928,12 @@
                   class="pa-6 mb-4 rounded-lg"
                   style="border-left: 4px solid #3b82f6; height: 100%"
                 >
-                  <v-icon color="#3b82f6" class="mb-3"
-                    >mdi-format-quote-open</v-icon
+                  <v-icon 
+                    color="#3b82f6" 
+                    class="mb-3"
                   >
+                    mdi-format-quote-open
+                  </v-icon>
                   <p
                     style="font-size: 16px; color: #334155; line-height: 1.6"
                     class="mb-4"
@@ -705,192 +944,296 @@
                     explicados de forma clara."
                   </p>
                   <div class="d-flex align-center mt-4">
-                    <v-avatar color="#bfdbfe" size="42">
+                    <v-avatar 
+                      color="#bfdbfe" 
+                      size="42"
+                    >
                       <span
                         class="text-subtitle-2 text-blue-800 font-weight-bold"
-                        >MS</span
                       >
+                        MS
+                      </span>
                     </v-avatar>
                     <div class="ml-3">
                       <p class="text-subtitle-2 font-weight-bold mb-0">
                         Maria Silva
                       </p>
-                      <p class="text-caption" style="color: #64748b">67 anos</p>
+                      <p 
+                        class="text-caption" 
+                        style="color: #64748b"
+                      >
+                        67 anos
+                      </p>
                     </div>
                   </div>
                 </v-card>
               </v-col>
-            </v-row></v-card
-          ></v-col
-        ></v-row
-      ></v-container
+            </v-row>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-card 
+      elevation="3" 
+      class="pa-6" 
+      color="#ffffff" 
+      rounded="lg"
     >
-    ></v-app
-  >
-  <v-card elevation="3" class="pa-6" color="#ffffff" rounded="lg">
-    <h2 class="text-h5 font-weight-medium mb-4" style="color: #1976d2">
-      Próximos Eventos
-    </h2>
-    <v-row>
-      <v-col cols="12" md="6">
-        <v-card elevation="2" class="pa-4">
-          <v-card-title>Webinar: Introdução à Programação</v-card-title>
-          <v-card-subtitle>10 de Outubro, 2024 - 19h</v-card-subtitle>
-          <v-card-text>
-            Aprenda os conceitos básicos de programação em uma sessão
-            interativa.
-          </v-card-text>
-          <v-btn color="primary" class="hover-effect">Inscreva-se</v-btn>
-        </v-card>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-card elevation="2" class="pa-4">
-          <v-card-title
-            >Workshop: Ferramentas Digitais para o Trabalho</v-card-title
-          >
-          <v-card-subtitle>15 de Outubro, 2024 - 14h</v-card-subtitle>
-          <v-card-text>
-            Descubra ferramentas que podem facilitar seu dia a dia profissional.
-          </v-card-text>
-          <v-btn color="primary" class="hover-effect">Inscreva-se</v-btn>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-card>
-  <v-card elevation="3" class="pa-6" color="#ffffff" rounded="lg">
-    <h2 class="text-h5 font-weight-medium mb-4" style="color: #1976d2">
-      Cursos em Destaque
-    </h2>
-    <v-row>
-      <v-col cols="12" md="4">
-        <v-card
-          elevation="2"
-          class="pa-4"
-          style="position: relative; height: 300px"
+      <h2 
+        class="text-h5 font-weight-medium mb-4" 
+        style="color: #1976d2"
+      >
+        Próximos Eventos
+      </h2>
+      <v-row>
+        <v-col 
+          cols="12" 
+          md="6"
         >
-          <v-img
-            src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            height="100%"
-            width="100%"
-            style="position: absolute; top: 0; left: 0; z-index: 0"
-            cover
-          ></v-img>
-          <div
-            style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.5);
-              z-index: 1;
-            "
-          ></div>
-          <div
-            style="position: relative; z-index: 2; color: white; padding: 16px"
+          <v-card 
+            elevation="2" 
+            class="pa-4"
           >
-            <v-card-title class="white--text"
-              >Introdução à Informática</v-card-title
-            >
-            <v-card-text class="white--text">
-              Aprenda os fundamentos da informática de forma simples e prática.
+            <v-card-title>Webinar: Introdução à Programação</v-card-title>
+            <v-card-subtitle>10 de Outubro, 2024 - 19h</v-card-subtitle>
+            <v-card-text>
+              Aprenda os conceitos básicos de programação em uma sessão
+              interativa.
             </v-card-text>
-            <v-btn color="primary" class="hover-effect">Saiba Mais</v-btn>
-          </div>
-        </v-card>
-      </v-col>
-      <v-col cols="12" md="4">
-        <v-card
-          elevation="2"
-          class="pa-4"
-          style="position: relative; height: 300px"
+            <v-btn 
+              color="primary" 
+              class="hover-effect"
+            >
+              Inscreva-se
+            </v-btn>
+          </v-card>
+        </v-col>
+        <v-col 
+          cols="12" 
+          md="6"
         >
-          <v-img
-            src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            height="100%"
-            width="100%"
-            style="position: absolute; top: 0; left: 0; z-index: 0"
-            cover
-          ></v-img>
-          <div
-            style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.5);
-              z-index: 1;
-            "
-          ></div>
-          <div
-            style="position: relative; z-index: 2; color: white; padding: 16px"
+          <v-card 
+            elevation="2" 
+            class="pa-4"
           >
-            <v-card-title class="white--text"
-              >Redes Sociais para Iniciantes</v-card-title
-            >
-            <v-card-text class="white--text">
-              Descubra como usar as redes sociais de forma segura e eficaz.
+            <v-card-title>
+              Workshop: Ferramentas Digitais para o Trabalho
+            </v-card-title>
+            <v-card-subtitle>15 de Outubro, 2024 - 14h</v-card-subtitle>
+            <v-card-text>
+              Descubra ferramentas que podem facilitar seu dia a dia profissional.
             </v-card-text>
-            <v-btn color="primary" class="hover-effect">Saiba Mais</v-btn>
-          </div>
-        </v-card>
-      </v-col>
-      <v-col cols="12" md="4">
-        <v-card
-          elevation="2"
-          class="pa-4"
-          style="position: relative; height: 300px"
+            <v-btn 
+              color="primary" 
+              class="hover-effect"
+            >
+              Inscreva-se
+            </v-btn>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+    <v-card 
+      elevation="3" 
+      class="pa-6" 
+      color="#ffffff" 
+      rounded="lg"
+    >
+      <h2 
+        class="text-h5 font-weight-medium mb-4" 
+        style="color: #1976d2"
+      >
+        Cursos em Destaque
+      </h2>
+      <v-row>
+        <v-col 
+          cols="12" 
+          md="4"
         >
-          <v-img
-            src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-            height="100%"
-            width="100%"
-            style="position: absolute; top: 0; left: 0; z-index: 0"
-            cover
-          ></v-img>
-          <div
-            style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              background-color: rgba(0, 0, 0, 0.5);
-              z-index: 1;
-            "
-          ></div>
-          <div
-            style="position: relative; z-index: 2; color: white; padding: 16px"
+          <v-card
+            elevation="2"
+            class="pa-4"
+            style="position: relative; height: 300px"
           >
-            <v-card-title class="white--text"
-              >Office 365 para o Dia a Dia</v-card-title
+            <v-img
+              src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              height="100%"
+              width="100%"
+              style="position: absolute; top: 0; left: 0; z-index: 0"
+              cover
+            />
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+              "
+            />
+            <div
+              style="position: relative; z-index: 2; color: white; padding: 16px"
             >
-            <v-card-text class="white--text">
-              Domine as ferramentas do Office 365 para aumentar sua
-              produtividade.
-            </v-card-text>
-            <v-btn color="primary" class="hover-effect">Saiba Mais</v-btn>
-          </div>
-        </v-card>
-      </v-col>
-    </v-row>
-  </v-card>
-  <v-card elevation="3" class="pa-6" color="#ffffff" rounded="lg">
-    <h2 class="text-h5 font-weight-medium mb-4" style="color: #1976d2">
-      Entre em Contato
-    </h2>
-    <v-form>
-      <v-text-field label="Nome" outlined required class="mb-4"></v-text-field>
-      <v-text-field
-        label="Email"
-        outlined
-        required
-        type="email"
-        class="mb-4"
-      ></v-text-field>
-      <v-textarea label="Mensagem" outlined rows="4" class="mb-4"></v-textarea>
-      <v-btn color="primary" class="hover-effect">Enviar</v-btn>
-    </v-form>
-  </v-card>
+              <v-card-title 
+                class="white--text"
+              >
+                Introdução à Informática
+              </v-card-title>
+              <v-card-text class="white--text">
+                Aprenda os fundamentos da informática de forma simples e prática.
+              </v-card-text>
+              <v-btn 
+                color="primary" 
+                class="hover-effect"
+              >
+                Saiba Mais
+              </v-btn>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col 
+          cols="12" 
+          md="4"
+        >
+          <v-card
+            elevation="2"
+            class="pa-4"
+            style="position: relative; height: 300px"
+          >
+            <v-img
+              src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              height="100%"
+              width="100%"
+              style="position: absolute; top: 0; left: 0; z-index: 0"
+              cover
+            />
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+              "
+            />
+            <div
+              style="position: relative; z-index: 2; color: white; padding: 16px"
+            >
+              <v-card-title 
+                class="white--text"
+              >
+                Redes Sociais para Iniciantes
+              </v-card-title>
+              <v-card-text class="white--text">
+                Descubra como usar as redes sociais de forma segura e eficaz.
+              </v-card-text>
+              <v-btn 
+                color="primary" 
+                class="hover-effect"
+              >
+                Saiba Mais
+              </v-btn>
+            </div>
+          </v-card>
+        </v-col>
+        <v-col 
+          cols="12" 
+          md="4"
+        >
+          <v-card
+            elevation="2"
+            class="pa-4"
+            style="position: relative; height: 300px"
+          >
+            <v-img
+              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              height="100%"
+              width="100%"
+              style="position: absolute; top: 0; left: 0; z-index: 0"
+              cover
+            />
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;"
+            />
+            <div
+              style="position: relative; z-index: 2; color: white; padding: 16px"
+            >
+              <v-card-title 
+                class="white--text"
+              >
+                Office 365 para o Dia a Dia
+              </v-card-title>
+              <v-card-text class="white--text">
+                Domine as ferramentas do Office 365 para aumentar sua
+                produtividade.
+              </v-card-text>
+              <v-btn 
+                color="primary" 
+                class="hover-effect"
+              >
+                Saiba Mais
+              </v-btn>
+            </div>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-card>
+    <div>
+      <v-card 
+        elevation="3" 
+        class="pa-6" 
+        color="#ffffff" 
+        rounded="lg"
+      >
+        <h2 
+          class="text-h5 
+          font-weight-medium mb-4" 
+          style="color: #1976d2"
+        >
+          Entre em Contato
+        </h2>
+        <v-form>
+          <v-text-field 
+            label="Nome" 
+            outlined 
+            required 
+            class="mb-4"
+          />
+          <v-text-field
+            label="Email"
+            outlined
+            required
+            type="email"
+            class="mb-4"
+          />
+          <v-textarea 
+            label="Mensagem" 
+            outlined 
+            rows="4" 
+            class="mb-4"
+          />
+          <v-btn 
+            color="primary" 
+            class="hover-effect"
+          >
+            Enviar
+          </v-btn>
+        </v-form>
+      </v-card>
+    </div>
+  </v-app>
 </template>
+  <script setup lang="ts">
+  </script>
+  <style scoped></style>
