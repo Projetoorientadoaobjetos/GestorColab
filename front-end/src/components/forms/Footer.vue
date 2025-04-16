@@ -11,15 +11,13 @@
         :icon="icon"
         density="comfortable"
         variant="text"
-      >
-      </v-btn>
+      />
     </div>
     <v-divider 
       class="my-2" 
       thickness="2" 
       width="50"
-    >
-    </v-divider>
+    />
     <div class="text-caption font-weight-regular white--text">
       <strong>A Helping To Growth é dedicada a tornar a tecnologia acessível a todos.
         Nossa plataforma oferece cursos intuitivos, suporte personalizado e uma
@@ -29,7 +27,7 @@
         cada etapa. Junte-se à nossa comunidade hoje e transforme a forma como
         você interage com a tecnologia.</strong>
     </div>
-    <v-divider></v-divider>
+    <v-divider />
     <div>
       {{ new Date().getFullYear() }} — <strong>Helping To Growth</strong>
     </div>
