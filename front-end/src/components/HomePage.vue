@@ -8,20 +8,6 @@
       position: relative;
     "
   >
-    <!-- Imagem de fundo com opacidade reduzida -->
-    <v-img
-      src="https://cdn.pixabay.com/photo/2015/06/01/09/04/keyboard-793048_1280.jpg"
-      cover
-      class="bg-img"
-      style="
-        position: absolute;
-        z-index: 0;
-        opacity: 0.08;
-        width: 100%;
-        height: 100%;
-      "
-    />
-
     <!-- Conteúdo principal -->
     <v-container
       fluid
@@ -1056,7 +1042,7 @@
             style="position: relative; height: 300px"
           >
             <v-img
-              src="https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="/images/pexels-photo-270360.webp"
               height="100%"
               width="100%"
               style="position: absolute; top: 0; left: 0; z-index: 0"
@@ -1103,7 +1089,7 @@
             style="position: relative; height: 300px"
           >
             <v-img
-              src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="/images/pexels-photo-267350.webp"
               height="100%"
               width="100%"
               style="position: absolute; top: 0; left: 0; z-index: 0"
@@ -1150,7 +1136,7 @@
             style="position: relative; height: 300px"
           >
             <v-img
-              src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              src="/images/pexels-photo-3184339.webp"
               height="100%"
               width="100%"
               style="position: absolute; top: 0; left: 0; z-index: 0"
