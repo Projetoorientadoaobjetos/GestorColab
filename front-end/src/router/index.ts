@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Login from "@/views/Login.vue";
-import RegistersUsers from "@/views/RegistersUsers.vue";
-import Home from "@/views/Home.vue";
-import ForgotPasswords from "@/views/ForgotPasswords.vue";
+const Login = () => import("@/views/Login.vue");
+const RegistersUsers = () => import("@/views/RegistersUsers.vue");
+const Home = () => import("@/views/Home.vue");
+const ForgotPasswords = () => import("@/views/ForgotPasswords.vue");
 
-const manualRouters = [
+const routes = [
   {
     path: "/",
     name: "login",
@@ -27,7 +27,6 @@ const manualRouters = [
     component: ForgotPasswords,
   },
 ];
-const routes = [...manualRouters];
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,9 +34,9 @@ const router = createRouter({
 });
 
 router.onError((err, to) => {
-  if (err?.message?.includes?.("Failed to fetch dynamically imported module")) {
+  if (err?.message?.includes("Failed to fetch dynamically imported module")) {
     if (!localStorage.getItem("vuetify:dynamic-reload")) {
-      console.log("Reloading page to fix dynamic import error");
+      console.warn("Reloading page to fix dynamic import error");
       localStorage.setItem("vuetify:dynamic-reload", "true");
       location.assign(to.fullPath);
     } else {
